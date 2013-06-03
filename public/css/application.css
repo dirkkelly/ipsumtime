@@ -1,0 +1,70 @@
+body {
+  background: #FFFFFF;
+}
+
+div, span, li, i {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+#bmo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 450px;
+  height: 600px;
+}
+
+#quote {
+  position: absolute;
+  left: 510px;
+  top: 110px;
+  width: 600px;
+  background-color: #EFEFEF;
+  border: #111111 solid 3px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#quote:after {
+  content: "";
+  position: absolute;
+  top: 105px;
+  left: -15px;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent #EFEFEF;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+#quote:before {
+  content: "";
+  position: absolute;
+  top: 103px;
+  left: -20px;
+  border-style: solid;
+  border-width: 17px 17px 17px 0;
+  border-color: transparent #111111;
+  display: block;
+  width: 0;
+  z-index: 0;
+}
+
+#quote p {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 15px 15px;
+  font-family: "Courier New";
+}
+
+#quote p:last-child {
+  margin: 10px 15px;
+}

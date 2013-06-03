@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title Ipsum Time
+    %link{href: '/css/application.css', rel: 'stylesheet', type: 'text/css', media: 'screen'}
+  %body
+    #bmo
+    #quote
+      - ipsums.each do |ipsum|
+        %p #{ipsum}
+
+    %script{src:'//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
+    %script{src:'//cdnjs.cloudflare.com/ajax/libs/two.js/0.2.0/two.min.js'}
+    %script{src:'/js/application.js'}
